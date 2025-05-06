@@ -1,0 +1,506 @@
+* {
+  box-sizing: border-box !important;
+}
+
+/* Configs for the body */
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+  font-size: 16px !important;
+  background: #031323 !important;
+  font-family: Verdana, Tahoma, Geneva, sans-serif !important;
+}
+
+.page-contents {
+  min-height: calc(100vh - 128px);
+}
+
+.footer-pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+/* Configs for the header */
+header {
+  background-color: #1f0026;
+  padding: 10px 30px;
+  font-weight: bold;
+  max-height: 200px;
+}
+
+.login-and-nav {
+  display: flex;
+  position: right;
+}
+
+.user-email {
+  color: #529c7c;
+  width: 40%;
+}
+
+/* Responsive header */
+/* For mobile devices */
+@media (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 95%;
+    display: inline-block;
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+}
+/* For tablets and laptops/desktops */
+@media (min-width: 426px) {
+  nav {
+    width: 98%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 10px 18px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fa1593;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  transition: 0.2s ease all;
+}
+
+nav ul li a:hover {
+  color: #95deff;
+  outline: 2px solid #95e3ff;
+}
+
+/* Configs for the footer */
+footer {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  background: #1f0026;
+  padding: 40px;
+  text-align: center;
+  color: #529c7c;
+}
+
+/* Configs for the Home page */
+
+/* Configs for the Hero section */
+.hero__title {
+  color: #95e3ff;
+  font-size: 65px;
+  margin: 1 !important;
+  font-weight: bold;
+}
+
+.hero__subtitle {
+  color: #95e3ff;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* For mobile devices */
+@media (max-width: 425px) {
+  .hero__subtitle {
+    padding-bottom: 40px !important;
+  }
+}
+/* For tablets and laptops/desktops */
+@media (min-width: 426px) {
+  .hero__title {
+    padding-top: 40px !important;
+  }
+}
+
+.hero {
+  min-height: 500px;
+  text-align: center;
+  /* linear-gradient - add an overlay shade of black to the background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cea6768a-2841-42e6-84d2-b32883c7d6da/decsx4s-0fd3a9fc-d074-44a6-969a-f1949f9fa163.png/v1/fill/w_1192,h_670/movie_posters_wallpaper_8k_by_dskstudiosl_decsx4s-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvY2VhNjc2OGEtMjg0MS00MmU2LTg0ZDItYjMyODgzYzdkNmRhXC9kZWNzeDRzLTBmZDNhOWZjLWQwNzQtNDRhNi05NjlhLWYxOTQ5ZjlmYTE2My5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nqDRS6Z2VZMGfrD3Slp0p5B6OlLELAWd_EvadL60qk8");
+  background-size: cover;
+  /* background-attachment - background image does not scroll with the page */
+  background-attachment: fixed;
+}
+
+/* Configs for the Features section */
+.features {
+  padding-bottom: 50px;
+  padding-top: 40px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features__header h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fa1593;
+}
+
+.features__box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__box {
+  text-align: center;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.features__box img {
+  margin-bottom: 12px;
+  width: 80px;
+}
+
+.features__box h5 {
+  font-size: 20px;
+  color: #e57cff;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.features__box p {
+  color: #95deff;
+  margin-top: 7px;
+}
+
+/* Responsive columns */
+@media (max-width: 700px) {
+  .features__box-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .features__box {
+    flex: 1 100%;
+  }
+
+  header {
+    max-height: 50%;
+  }
+}
+
+/* Configs for the Movies page */
+.movie-content-wrapper h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 43px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fa1593;
+}
+
+.movie-searching {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.search-filters {
+  height: 65%;
+  width: 30%;
+  background: linear-gradient(150deg, #7B0D8D, #362269);
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  flex: 1;
+  padding-bottom: 15px;
+}
+
+.search-filters p {
+  color: #95deff;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.search-filters input {
+  width: 95%;
+  border-radius: 5px;
+  border-width: 0.5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.movie-searchbar Button {
+  margin-left: 5px;
+}
+
+.movies-table {
+  height: 65%;
+  width: 62%;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.movies-table .ag-theme-balham {
+  --ag-foreground-color: rgb(126, 46, 132);
+  --ag-background-color: rgb(249, 245, 227);
+  --ag-header-foreground-color: rgb(204, 245, 172);
+  --ag-header-background-color: rgb(209, 64, 129);
+  --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+  --ag-header-column-resize-handle-color: rgb(126, 46, 132);
+
+  --ag-font-size: 15px;
+  --ag-font-family: Verdana;
+}
+
+/* Configs for the Individual Movie page */
+.individual-movie h1 {
+  color: #95deff;
+  text-transform: uppercase;
+  display: flex;
+  margin-left: 7px;
+}
+
+.individual-movie img {
+  display: flex;
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.individual-movie p {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.movie-info {
+  margin-left: 5px;
+}
+
+.movie-plot {
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+.crew-and-ratings-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.movie-crew {
+  height: 95%;
+  width: 25%;
+  margin-left: 10px;
+}
+
+.movie-crew h3 {
+  color: #95deff;
+  display: flex;
+  margin-left: 7px;
+}
+
+.bar-chart {
+  height: 95%;
+  width: 75%;
+  right: 1px;
+}
+
+.back-button {
+  position: sticky;
+  margin-left: 5px;
+}
+
+/* Configs for the individuals page */
+.person-info h2 {
+  color: #95deff;
+  display: flex;
+  margin-left: 7px;
+}
+
+.person-info h3 {
+  color: #95deff;
+  display: flex;
+  margin-left: 7px;
+}
+
+.roles-and-ratings-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.roles-table {
+  height: 95%;
+  width: 45%;
+  margin-left: 4px;
+}
+
+.roles-table .ag-theme-balham {
+  --ag-foreground-color: rgb(126, 46, 132);
+  --ag-background-color: rgb(249, 245, 227);
+  --ag-header-foreground-color: rgb(204, 245, 172);
+  --ag-header-background-color: rgb(209, 64, 129);
+  --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+  --ag-header-column-resize-handle-color: rgb(126, 46, 132);
+
+  --ag-font-size: 15px;
+  --ag-font-family: Verdana;
+}
+
+.ratings-graph {
+  height: 100%;
+  width: 45%;
+  margin-top: 75px;
+  margin-left: 15px;
+}
+
+.ratings-graph canvas {
+  height: fit-content !important;
+  width: fit-content !important;
+}
+
+/* Configs for the login and register pages */
+.lgrg-box-wrapper {
+  height: 50%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  color: #95deff;
+  margin: auto;
+  align-items: center;
+  background: linear-gradient(150deg, #7B0D8D, #362269);
+  border-radius: 10px;
+}
+
+.lgrg-box-wrapper h2 {
+  margin-top: 10px;
+}
+
+.email-form {
+  margin-top: 5px;
+}
+
+.lgrg-box-wrapper input {
+  border-radius: 5px;
+  margin-top: 5px;
+  border-width: 1px;
+}
+
+.email-img {
+  margin-right: 5px;
+}
+
+.password-img {
+  margin-right: 5px;
+}
+
+.lgrg-button {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.lgrg-message {
+  margin-top: 10px;
+}
+
+.lgrg-link:hover {
+  color: #fa1593;
+}
+
+/* Configs for the error page */
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #95deff;
+  font-weight: bold;
+}
+
+.page-not-found h2 {
+  font-weight: bold;
+}
+
+.error-gif {
+  margin-bottom: 10px;
+}
+
+/* Configs for the logout page */
+.logging-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #95deff;
+  font-weight: bold;
+}
+
+.logging-out h3 {
+  font-weight: bold;
+}
+
+.logout-gif {
+  margin-bottom: 10px;
+}
+
+/* Configs for the unauthorised page */
+.unauthorised-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #95deff;
+  font-weight: bold;
+}
+
+.unauthorised-user h3 {
+  font-weight: bold;
+}
+
+.unauthorised-gif {
+  margin-bottom: 10px;
+}
